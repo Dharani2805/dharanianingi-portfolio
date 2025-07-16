@@ -26,10 +26,6 @@
   background-size: 150%;
   background: $experienceCardBannerLG;
   border-radius: 10px 10px 0px 0px;
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -o-filter: blur(0px);
-  -ms-filter: blur(0px);
   filter: blur(0px);
   height: 11rem;
   display: flex;
@@ -40,10 +36,6 @@
 .experience-blurred_div {
   position: absolute;
   background: $experienceCardBlurredDivLG;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
   filter: blur(5px);
   height: 11rem;
   top: 0;
@@ -70,7 +62,6 @@
   margin: 0;
   color: $lightBackground1;
   font-size: 25px;
-  text-align: center;
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -79,7 +70,9 @@
 
 .experience-roundedimg {
   position: absolute;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: white;
+  padding: 0.5rem;
   left: 0;
   right: 0;
   top: 7rem;
@@ -87,9 +80,10 @@
   margin-right: auto;
   width: 8rem;
   height: 8rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
 }
+
 
 .experience-text-role {
   text-align: center;
@@ -98,11 +92,12 @@
   font-size: 25px;
   margin: 0px;
   padding-top: 1.5rem;
-  line-height: normal;
 }
+
 .dark-mode-text {
   color: $textColorDark !important;
 }
+
 .experience-text-date {
   text-align: center;
   color: $textColor;
@@ -121,7 +116,7 @@
   margin-top: 2rem;
 }
 
-/* Media Query */
+/* Media Queries */
 
 @media (max-width: 1380px) {
   .experience-text-role {

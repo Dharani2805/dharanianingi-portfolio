@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -7,21 +7,16 @@ import {
   greeting,
   workExperiences,
   skillsSection,
-  openSource,
-  blogSection,
-  talkSection,
+  // openSource,  <-- remove this
   achievementSection,
   resumeSection
 } from "../../portfolio";
 
 function Header() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
-  const viewBlog = blogSection.display;
-  const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
 
   return (
@@ -36,7 +31,7 @@ function Header() {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{color: "white"}}
+          style={{ color: "white" }}
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
@@ -51,31 +46,27 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {viewOpenSource && (
-            <li>
-              <a href="#opensource">Open Source</a>
-            </li>
-          )}
+          {/* Replacing Open Source with Projects */}
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
             </li>
           )}
-          {viewBlog && (
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">Talks</a>
-            </li>
-          )}
           {viewResume && (
-            <li>
-              <a href="#resume">Resume</a>
-            </li>
-          )}
+  <li>
+    <a
+      href="/Resume_DharaniAningi.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Resume
+    </a>
+  </li>
+)}
+
           <li>
             <a href="#contact">Contact Me</a>
           </li>
@@ -90,4 +81,6 @@ function Header() {
     </Headroom>
   );
 }
+
 export default Header;
+

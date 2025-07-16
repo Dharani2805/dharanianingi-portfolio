@@ -1,15 +1,15 @@
 import React from "react";
 import "./GithubRepoCard.scss";
-import {Fade} from "react-reveal";
-import {formatFileSizeDisplay} from "../../utils";
+import { Fade } from "react-reveal";
+import { formatFileSizeDisplay } from "../../utils";
 
-export default function GithubRepoCard({repo, isDark}) {
+export default function GithubRepoCard({ repo, isDark }) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.log(`URL in ${name} is undefined`);
       return;
     }
-    var win = window.open(url, "_blank");
+    const win = window.open(url, "_blank");
     win.focus();
   }
 
@@ -21,6 +21,18 @@ export default function GithubRepoCard({repo, isDark}) {
           key={repo.node.id}
           onClick={() => openUrlInNewTab(repo.node.url, repo.node.name)}
         >
+          {/* Project Image from GitHub */}
+          {repo.node.openGraphImageUrl && (
+            <div className="project-card-image-wrapper">
+              <img
+                src={repo.node.openGraphImageUrl}
+                alt={repo.node.name}
+                className="project-card-image"
+              />
+            </div>
+          )}
+
+          {/* Repo Name */}
           <div className="repo-name-div">
             <svg
               aria-hidden="true"
@@ -37,14 +49,18 @@ export default function GithubRepoCard({repo, isDark}) {
             </svg>
             <p className="repo-name">{repo.node.name}</p>
           </div>
+
+          {/* Repo Description */}
           <p className="repo-description">{repo.node.description}</p>
+
+          {/* Repo Stats */}
           <div className="repo-stats">
             <div className="repo-left-stat">
-              {repo.node.primaryLanguage !== null && (
+              {repo.node.primaryLanguage && (
                 <span>
                   <div
                     className="language-color"
-                    style={{backgroundColor: repo.node.primaryLanguage.color}}
+                    style={{ backgroundColor: repo.node.primaryLanguage.color }}
                   ></div>
                   <p>{repo.node.primaryLanguage.name}</p>
                 </span>
