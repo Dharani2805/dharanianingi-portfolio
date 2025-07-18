@@ -42,8 +42,8 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
+                    href={`${process.env.PUBLIC_URL}/Resume_DharaniAningi.pdf`}
+                    download="Resume_DharaniAningi.pdf"
                     className="download-link-button"
                   >
                     <Button text="Download my resume" />
