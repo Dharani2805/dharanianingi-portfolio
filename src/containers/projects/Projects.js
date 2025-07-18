@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import { socialMediaLinks, bigProjects } from "../../portfolio";
+import {socialMediaLinks, bigProjects} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Projects() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   return (
     <div className="main" id="opensource">

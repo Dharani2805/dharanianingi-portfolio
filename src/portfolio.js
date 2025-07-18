@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     " 🚀  Data & Business Analyst with expertise in Machine Learning 🤖 and data analytics 📊, with experience building scalable data pipelines 🔄, insightful dashboards 📈, and LLM-powered healthcare tools 🏥. Dedicated to transforming data into actionable insights 💡 that drive impactful decisions."
   ),
-  resumeLink:
-    "http://localhost:3000/Resume_DharaniAningi.pdf", // Set to empty to hide the button
+  resumeLink: "http://localhost:3000/Resume_DharaniAningi.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -45,31 +44,46 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I Do",
-  subTitle: "Data & Business Analyst passionate about solving real-world problems using AI, analytics, and agile execution",
+  subTitle:
+    "Data & Business Analyst passionate about solving real-world problems using AI, analytics, and agile execution",
   skills: [
-    emoji("⚡ Building scalable ETL pipelines and automating data workflows using Python, SQL, BigQuery, and AWS"),
-    emoji("⚡ Creating interactive dashboards and KPIs using Tableau and Power BI to drive business insights"),
-    emoji("⚡ Applying Machine Learning, Generative AI, and LLMs in fraud detection and healthcare analytics"),
-    emoji("⚡ Gathering requirements, conducting impact analysis, and leading sprint planning in Agile projects"),
-    emoji("⚡ Streamlining operations with tools like ServiceNow, Tivoli Work Scheduler, and Rational Team Concert")
+    emoji(
+      "⚡ Building scalable ETL pipelines and automating data workflows using Python, SQL, BigQuery, and AWS"
+    ),
+    emoji(
+      "⚡ Creating interactive dashboards and KPIs using Tableau and Power BI to drive business insights"
+    ),
+    emoji(
+      "⚡ Applying Machine Learning, Generative AI, and LLMs in fraud detection and healthcare analytics"
+    ),
+    emoji(
+      "⚡ Gathering requirements, conducting impact analysis, and leading sprint planning in Agile projects"
+    ),
+    emoji(
+      "⚡ Streamlining operations with tools like ServiceNow, Tivoli Work Scheduler, and Rational Team Concert"
+    )
   ],
   softwareSkills: [
-    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "SQL", fontAwesomeClassname: "fas fa-database" },
-    { skillName: "Tableau", fontAwesomeClassname: "fas fa-chart-bar" },
-    { skillName: "Power BI", fontAwesomeClassname: "fas fa-chart-pie" },
-    { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
-    { skillName: "GCP", fontAwesomeClassname: "fab fa-google" },
-    { skillName: "LLMs", fontAwesomeClassname: "fas fa-brain" },
-    { skillName: "ServiceNow", fontAwesomeClassname: "fas fa-tools" },
-    { skillName: "Tivoli Scheduler", fontAwesomeClassname: "fas fa-calendar-check" },
-    { skillName: "Rational Team Concert", fontAwesomeClassname: "fas fa-project-diagram" },
-    { skillName: "Agile/Scrum", fontAwesomeClassname: "fas fa-users-cog" }
+    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
+    {skillName: "SQL", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "Tableau", fontAwesomeClassname: "fas fa-chart-bar"},
+    {skillName: "Power BI", fontAwesomeClassname: "fas fa-chart-pie"},
+    {skillName: "AWS", fontAwesomeClassname: "fab fa-aws"},
+    {skillName: "GCP", fontAwesomeClassname: "fab fa-google"},
+    {skillName: "LLMs", fontAwesomeClassname: "fas fa-brain"},
+    {skillName: "ServiceNow", fontAwesomeClassname: "fas fa-tools"},
+    {
+      skillName: "Tivoli Scheduler",
+      fontAwesomeClassname: "fas fa-calendar-check"
+    },
+    {
+      skillName: "Rational Team Concert",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    },
+    {skillName: "Agile/Scrum", fontAwesomeClassname: "fas fa-users-cog"}
   ],
   display: true
 };
-
-
 
 // Education Section
 
@@ -85,10 +99,10 @@ const educationInfo = {
     },
     {
       schoolName: "GITAM University",
-  logo: require("./assets/images/gitamLogo.png"),
-  subHeader: "Bachelor of Technology in Computer Science",
-  duration: "August 2013 – May 2017",
-  desc: "Relevant Coursework: Data Structures and Algorithms, Operating Systems, Computer Networks, Database Management Systems, Web Technologies, and Software Engineering."
+      logo: require("./assets/images/gitamLogo.png"),
+      subHeader: "Bachelor of Technology in Computer Science",
+      duration: "August 2013 – May 2017",
+      desc: "Relevant Coursework: Data Structures and Algorithms, Operating Systems, Computer Networks, Database Management Systems, Web Technologies, and Software Engineering."
     }
   ]
 };
@@ -126,7 +140,6 @@ const techStack = {
   displayCodersrank: false
 };
 
-
 // Work experience section
 const workExperiences = {
   display: true,
@@ -157,20 +170,19 @@ const workExperiences = {
       ]
     },
     {
-  role: "Data Analyst Intern",
-  company: "HCLTech",
-  companylogo: require("./assets/images/hcltechLogo.png"), // Make sure this image exists
-  date: "Jan 2016 – Jan 2017",
-  desc: "Worked on Customer Relationship Management (CRM) systems and Salesforce to support data-driven decisions and client solutions.",
-  descBullets: [
-    "Developed reports and dashboards in Salesforce for CRM insights",
-    "Assisted in data cleaning, validation, and transformation for internal reporting",
-    "Collaborated with cross-functional teams to improve customer experience analytics"
-  ]
-}
+      role: "Data Analyst Intern",
+      company: "HCLTech",
+      companylogo: require("./assets/images/hcltechLogo.png"), // Make sure this image exists
+      date: "Jan 2016 – Jan 2017",
+      desc: "Worked on Customer Relationship Management (CRM) systems and Salesforce to support data-driven decisions and client solutions.",
+      descBullets: [
+        "Developed reports and dashboards in Salesforce for CRM insights",
+        "Assisted in data cleaning, validation, and transformation for internal reporting",
+        "Collaborated with cross-functional teams to improve customer experience analytics"
+      ]
+    }
   ]
 };
-
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -187,9 +199,10 @@ const bigProjects = {
   subtitle: "AI, Data Analytics, and Real-World Problem Solving",
   projects: [
     {
-      image: require("./assets/images/graphRagLogo.png"),  // Replace with actual image
+      image: require("./assets/images/graphRagLogo.png"), // Replace with actual image
       projectName: "LLM Medical Knowledge Graph",
-      projectDesc: "Built a real-time AI platform using Large Language Models (Mistral, GPT-4), semantic ontologies, and GraphRAG with ChromaDB & Neo4j to enhance medical decision-making by 30%.",
+      projectDesc:
+        "Built a real-time AI platform using Large Language Models (Mistral, GPT-4), semantic ontologies, and GraphRAG with ChromaDB & Neo4j to enhance medical decision-making by 30%.",
       footerLink: [
         {
           name: "View Project",
@@ -198,9 +211,10 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/sentimentAnalysisLogo.png"),  // Replace with actual image
+      image: require("./assets/images/sentimentAnalysisLogo.png"), // Replace with actual image
       projectName: "Cyberbullying Classifier",
-      projectDesc: "Developed a text classification system using BERT, GRU, LSTM achieving 97% accuracy. Implemented advanced sentiment analysis with Word2Vec and solved complex data transformation challenges.",
+      projectDesc:
+        "Developed a text classification system using BERT, GRU, LSTM achieving 97% accuracy. Implemented advanced sentiment analysis with Word2Vec and solved complex data transformation challenges.",
       footerLink: [
         {
           name: "View Project",
@@ -209,9 +223,10 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/fireDeptLogo.png"),  // Replace with actual image
+      image: require("./assets/images/fireDeptLogo.png"), // Replace with actual image
       projectName: "Fire Department Analytics",
-      projectDesc: "Analyzed over 6M emergency records for San Francisco Fire Department. Improved emergency response times by 20% and enhanced public safety insights using AWS and Tableau.",
+      projectDesc:
+        "Analyzed over 6M emergency records for San Francisco Fire Department. Improved emergency response times by 20% and enhanced public safety insights using AWS and Tableau.",
       footerLink: [
         {
           name: "View Project",
@@ -223,17 +238,18 @@ const bigProjects = {
   display: true
 };
 
-
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
   title: emoji("Certifications & Achievements🏆 "),
-  subtitle: "Credentials, recognitions, and milestones that highlight my career journey.",
+  subtitle:
+    "Credentials, recognitions, and milestones that highlight my career journey.",
   achievementsCards: [
     {
       title: "SAFe® 6.0 Product Owner & Product Manager",
-      description: "Certified SAFe® POPM, specializing in Agile Product Management."
+      description:
+        "Certified SAFe® POPM, specializing in Agile Product Management."
     },
     {
       title: "Lean Six Sigma Foundations",
@@ -244,21 +260,25 @@ const achievementSection = {
       description: "PMI & IIBA Certified Green Belt for process improvement."
     },
     {
-  title: "Microsoft Certified: Career Essentials in Data Analysis",
-  description: "Issued by Microsoft and LinkedIn for demonstrating proficiency in data analysis fundamentals, including Excel, Power BI, and data storytelling."
-},
+      title: "Microsoft Certified: Career Essentials in Data Analysis",
+      description:
+        "Issued by Microsoft and LinkedIn for demonstrating proficiency in data analysis fundamentals, including Excel, Power BI, and data storytelling."
+    },
     {
-  title: "ServiceNow IT Leadership Professional Certificate",
-  description: "Issued by ServiceNow in Jan 2025 for demonstrating leadership in IT management practices."
-},
-{
-  title: "Generative AI and Large Language Models on AWS",
-  description: "Issued by AWS for completing hands-on training on building and deploying LLMs using AWS services."
-},
-{
-  title: "Microsoft Certified: Career Essentials in Generative AI",
-  description: "Issued by Microsoft and LinkedIn for foundational knowledge in Generative AI concepts and tools."
-},
+      title: "ServiceNow IT Leadership Professional Certificate",
+      description:
+        "Issued by ServiceNow in Jan 2025 for demonstrating leadership in IT management practices."
+    },
+    {
+      title: "Generative AI and Large Language Models on AWS",
+      description:
+        "Issued by AWS for completing hands-on training on building and deploying LLMs using AWS services."
+    },
+    {
+      title: "Microsoft Certified: Career Essentials in Generative AI",
+      description:
+        "Issued by Microsoft and LinkedIn for foundational knowledge in Generative AI concepts and tools."
+    },
 
     {
       title: "IDC Pinnacle Award",
@@ -271,7 +291,7 @@ const achievementSection = {
     {
       title: "Star of the Month",
       description: "Recognized for outstanding performance in December 2021."
-    },
+    }
   ],
   display: true
 };
@@ -293,7 +313,6 @@ const contactInfo = {
   number: "+1-408-505-6794",
   email_address: "dharani.aningi@gmail.com"
 };
-
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 

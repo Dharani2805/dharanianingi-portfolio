@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
-import { achievementSection } from "../../portfolio";
+import React, {useContext} from "react";
+import {achievementSection} from "../../portfolio";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
 import StyleContext from "../../contexts/StyleContext";
 import "./Achievement.scss";
 
 export default function Achievement() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   if (!achievementSection.display) return null;
 
@@ -30,4 +30,3 @@ export default function Achievement() {
     </div>
   );
 }
-

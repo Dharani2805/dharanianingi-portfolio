@@ -45,18 +45,18 @@ const Main = () => {
           <SplashScreen />
         ) : (
           <>
-          <Header />
-          <Greeting />
-          <Skills />
-          <StackProgress />
-          <Education />
-          <WorkExperience />
-          <StartupProject />
-          <Achievement />
-          <Profile />
-          <Footer />
-          <ScrollToTopButton />
-        </>
+            <Header />
+            <Greeting />
+            <Skills />
+            <StackProgress />
+            <Education />
+            <WorkExperience />
+            <StartupProject />
+            <Achievement />
+            <Profile />
+            <Footer />
+            <ScrollToTopButton />
+          </>
         )}
       </StyleProvider>
     </div>
