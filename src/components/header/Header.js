@@ -58,7 +58,7 @@ function Header() {
           {viewResume && (
   <li>
     <a
-      href="/Resume_DharaniAningi.pdf"
+      href={`${process.env.PUBLIC_URL}/Resume_DharaniAningi.pdf`}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -66,6 +66,7 @@ function Header() {
     </a>
   </li>
 )}
+
 
           <li>
             <a href="#contact">Contact Me</a>
