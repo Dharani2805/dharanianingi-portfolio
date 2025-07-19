@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dharanianingi-portfolio/static/css/main.5e109ddd.css",
-    "main.js": "/dharanianingi-portfolio/static/js/main.01284918.js",
+    "main.js": "/dharanianingi-portfolio/static/js/main.e2cd24bb.js",
     "static/css/769.b3cbb36b.chunk.css": "/dharanianingi-portfolio/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/dharanianingi-portfolio/static/js/769.bda0d7b7.chunk.js",
     "static/media/graphRagLogo.png": "/dharanianingi-portfolio/static/media/graphRagLogo.56fc988490c2b3db6fdd.png",
@@ -18,15 +18,14 @@
     "static/media/contactMailDark.svg": "/dharanianingi-portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/dharanianingi-portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/skill.svg": "/dharanianingi-portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
-    "static/media/resume.pdf": "/dharanianingi-portfolio/static/media/resume.f0f733dd3cd732b39262.pdf",
     "index.html": "/dharanianingi-portfolio/index.html",
     "main.5e109ddd.css.map": "/dharanianingi-portfolio/static/css/main.5e109ddd.css.map",
-    "main.01284918.js.map": "/dharanianingi-portfolio/static/js/main.01284918.js.map",
+    "main.e2cd24bb.js.map": "/dharanianingi-portfolio/static/js/main.e2cd24bb.js.map",
     "769.b3cbb36b.chunk.css.map": "/dharanianingi-portfolio/static/css/769.b3cbb36b.chunk.css.map",
     "769.bda0d7b7.chunk.js.map": "/dharanianingi-portfolio/static/js/769.bda0d7b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e109ddd.css",
-    "static/js/main.01284918.js"
+    "static/js/main.e2cd24bb.js"
   ]
 }
