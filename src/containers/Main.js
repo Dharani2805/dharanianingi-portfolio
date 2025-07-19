@@ -16,6 +16,33 @@ import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 
+// Resume Section Component
+const ResumeSection = () => {
+  return (
+    <section id="resume" className="resume-section">
+      <div className="container">
+        <div className="resume-container">
+          <h1 className="resume-heading">Resume</h1>
+          <p className="resume-subtitle">
+            Download my resume to learn more about my experience and skills.
+          </p>
+          <div className="resume-download">
+            <a
+              href={`${process.env.PUBLIC_URL}/Resume_DharaniAningi.pdf`}
+              download="Dharani_Aningi_Resume.pdf"
+              className="resume-download-link"
+            >
+              <button className="resume-btn">
+                DOWNLOAD MY RESUME
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
@@ -53,6 +80,7 @@ const Main = () => {
             <WorkExperience />
             <StartupProject />
             <Achievement />
+            <ResumeSection />
             <Profile />
             <Footer />
             <ScrollToTopButton />
