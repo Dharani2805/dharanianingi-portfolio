@@ -57,7 +57,7 @@ function Header() {
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Resume</a>
+              <a href="#resume" className="resume-link">DOWNLOAD MY RESUME</a>
             </li>
           )}
           <li>
